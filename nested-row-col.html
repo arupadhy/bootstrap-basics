@@ -1,0 +1,87 @@
+<!DCOTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <style>
+        .customClass {
+            /*background-color: black;*/
+            border: 1px solid black;
+            min-height: 105px;
+            text-align: center;
+        }
+        
+        .sideBar {
+            /*background-color: red;*/
+            border: 1px solid red;
+            min-height: 50px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!--One Row with two columns with width 3, 9, first column having two rows inside it-->
+        <div class="row">
+            <div class="col-xs-3">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="sideBar">
+                            Row1-FirstCol-3-{NestedRow1}-{col-12}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="sideBar">
+                             Row1-FirstCol-3-{NestedRow2}-{col-12}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-9">
+                <div class="customClass">
+                    Row1-SecondCol-9
+                </div>
+            </div>
+        </div>
+
+        <!--single Row with three columns of width 5,3.5,3.5-->
+
+        <div class="row">
+
+            <div class="col-xs-5">
+                <div class="customClass">
+                    Row-2-Col1-5
+                </div>
+            </div>
+
+            <div class="col-xs-7">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="customClass">
+                            Row2-Col2-{NestedRow}-Col1-6
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="customClass">
+                             Row2-Col2-{NestedRow}-Col2-6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
